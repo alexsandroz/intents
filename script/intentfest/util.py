@@ -33,6 +33,7 @@ def get_base_arg_parser() -> argparse.ArgumentParser:
             "validate",
             "language_table",
             "generate_day_ordinals",
+            "update_language",
         ],
     )
     parser.add_argument("--debug", action="store_true", help="Enable log output")
