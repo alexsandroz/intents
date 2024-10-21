@@ -34,13 +34,13 @@ def get_arguments() -> argparse.Namespace:
 def run() -> int:
     args = get_arguments()
 
-    # base_dir = SENTENCE_DIR / "en"
-    # update_dir = SENTENCE_DIR / args.language
-    # update_language(base_dir, update_dir)
+    base_dir = SENTENCE_DIR / "en"
+    update_dir = SENTENCE_DIR / args.language
+    update_language(base_dir, update_dir, args.language)
 
-    # base_dir = RESPONSE_DIR / "en"
-    # update_dir = RESPONSE_DIR / args.language
-    # update_language(base_dir, update_dir)
+    base_dir = RESPONSE_DIR / "en"
+    update_dir = RESPONSE_DIR / args.language
+    update_language(base_dir, update_dir, args.language)
 
     base_dir = TESTS_DIR / "en"
     update_dir = TESTS_DIR / args.language
